@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+
   document.getElementById('registrationForm').addEventListener('submit', e => {
     e.preventDefault();
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -21,4 +21,4 @@ document.addEventListener('DOMContentLoaded', () => {
     !phonePattern.test(no) ? 'Invalid Phone' : 'Registration Successful';
     regError.style.color = regError.textContent === 'Registration Successful' ? 'green' : 'red';
   });
-});
+
